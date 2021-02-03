@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/GEO.dir/GEO.cpp.o  -o GEO 
