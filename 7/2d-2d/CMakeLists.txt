@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(g2oex)
+project(2d-2d)
 
 set(CMAKE_BUILD_TYPE "Release")
 #set(CMTKE_CXXFLAGS "-03")
@@ -33,15 +33,7 @@ include_directories("/usr/local/include/g2o")
 find_package(g2o REQUIRED)
 include_directories("/usr/include/eigen3")
 
-add_executable(g2oex g2oex.cpp)
+add_executable(2D_2D 2D_2D.cpp)
 
 #link opencv
-target_link_libraries(g2oex ${OpenCV_LIBS})
-#link pangolin
-target_link_libraries(g2oex ${Pangolin_LIBRARIES})
-#link sophus
-target_link_libraries(g2oex Sophus::Sophus)
-#link Ceres
-target_link_libraries(g2oex ${CERES_LIBRARIES})
-#link g2o
-target_link_libraries(g2oex g2o::core g2o::stuff)
+target_link_libraries(2D_2D ${OpenCV_LIBS})
